@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using KickScooter_API.DAL;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace KickScooter_API.BLL
 {
     public class BLLModule
     {
+        public static void Load(IServiceCollection service, IConfiguration configuration)
+        {
+            DALModule.Load(service, configuration);
+        }
     }
 }

@@ -15,4 +15,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KickScooter-API.BLL\KickScooter-API.BLL.csproj" />
+  </ItemGroup>
+
 </Project>
