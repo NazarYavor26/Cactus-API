@@ -7,7 +7,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-const string KickScooterPolicy = "MyGuidePolicy";
+const string KickScooterPolicy = "KickScooterPolicy";
 
 builder.Services.AddCors(options => options.AddPolicy(KickScooterPolicy, builder =>
 {

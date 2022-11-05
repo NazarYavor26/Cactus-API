@@ -1,6 +1,5 @@
 ﻿using KickScooter_API.BLL.Models;
 using KickScooter_API.BLL.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KickScooter_API.Controllers
