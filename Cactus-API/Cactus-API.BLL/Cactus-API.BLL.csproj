@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>KickScooter_API.BLL</RootNamespace>
+    <RootNamespace>Cactus_API.BLL</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KickScooter-API.DAL\Cactus-API.DAL.csproj" />
+    <ProjectReference Include="..\Cactus-API.DAL\Cactus-API.DAL.csproj" />
   </ItemGroup>
 
 </Project>

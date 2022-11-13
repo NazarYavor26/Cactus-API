@@ -7,6 +7,8 @@ namespace Cactus_API.DAL.DbContexts
     {
         public DbSet<HelpCall> HelpCalls { get; set; }
 
+        public DbSet<ScooterProduct> ScooterProducts { get; set; }
+
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)  
         { }
     }

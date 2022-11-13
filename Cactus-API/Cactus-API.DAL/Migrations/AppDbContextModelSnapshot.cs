@@ -21,7 +21,7 @@ namespace Cactus_API.DAL.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("KickScooter_API.DAL.Entities.HelpCall", b =>
+            modelBuilder.Entity("Cactus_API.DAL.Entities.HelpCall", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -42,6 +42,35 @@ namespace Cactus_API.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("HelpCalls");
+                });
+
+            modelBuilder.Entity("Cactus_API.DAL.Entities.ScooterProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<bool>("IsAvailable")
+                        .HasColumnType("bit");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ScooterProducts");
                 });
 #pragma warning restore 612, 618
         }
