@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KickScooter-API.BLL\KickScooter-API.BLL.csproj" />
+    <ProjectReference Include="..\KickScooter-API.BLL\Cactus-API.BLL.csproj" />
   </ItemGroup>
 
 </Project>

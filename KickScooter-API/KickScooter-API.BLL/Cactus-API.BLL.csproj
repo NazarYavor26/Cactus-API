@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KickScooter-API.DAL\KickScooter-API.DAL.csproj" />
+    <ProjectReference Include="..\KickScooter-API.DAL\Cactus-API.DAL.csproj" />
   </ItemGroup>
 
 </Project>
