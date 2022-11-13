@@ -1,11 +1,13 @@
-﻿using KickScooter_API.DAL.Entities;
+﻿using Cactus_API.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace KickScooter_API.DAL.DbContexts
+namespace Cactus_API.DAL.DbContexts
 {
     public class AppDbContext : DbContext
     {
         public DbSet<HelpCall> HelpCalls { get; set; }
+
+        public DbSet<ScooterProduct> ScooterProducts { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)  
         { }

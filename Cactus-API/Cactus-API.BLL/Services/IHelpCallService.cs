@@ -1,11 +1,11 @@
-﻿using KickScooter_API.BLL.Models;
+﻿using Cactus_API.BLL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KickScooter_API.BLL.Services
+namespace Cactus_API.BLL.Services
 {
     public interface IHelpCallService
     {

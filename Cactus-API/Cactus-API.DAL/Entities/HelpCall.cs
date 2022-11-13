@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KickScooter_API.DAL.Entities
+namespace Cactus_API.DAL.Entities
 {
     public class HelpCall
     {

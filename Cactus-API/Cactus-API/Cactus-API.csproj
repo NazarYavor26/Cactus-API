@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>KickScooter_API</RootNamespace>
+    <RootNamespace>Cactus_API</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KickScooter-API.BLL\KickScooter-API.BLL.csproj" />
+    <ProjectReference Include="..\Cactus-API.BLL\Cactus-API.BLL.csproj" />
+    <ProjectReference Include="..\Cactus-API.BLL\Cactus-API.BLL.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
-﻿using KickScooter_API.DAL;
+﻿using Cactus_API.DAL;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace KickScooter_API.BLL
+namespace Cactus_API.BLL
 {
     public class BLLModule
     {
