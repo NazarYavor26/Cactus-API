@@ -1,7 +1,7 @@
-﻿using KickScooter_API.DAL.Entities;
+﻿using Cactus_API.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace KickScooter_API.DAL.DbContexts
+namespace Cactus_API.DAL.DbContexts
 {
     public class AppDbContext : DbContext
     {

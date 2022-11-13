@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace KickScooter_API.DAL.Migrations
+namespace Cactus_API.DAL.Migrations
 {
     public partial class Init : Migration
     {

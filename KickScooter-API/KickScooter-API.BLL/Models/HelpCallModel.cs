@@ -1,4 +1,4 @@
-﻿namespace KickScooter_API.BLL.Models
+﻿namespace Cactus_API.BLL.Models
 {
     public class HelpCallModel
     {

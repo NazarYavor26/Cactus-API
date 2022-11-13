@@ -1,13 +1,13 @@
-﻿using KickScooter_API.BLL.Models;
-using KickScooter_API.DAL.DbContexts;
-using KickScooter_API.DAL.Entities;
+﻿using Cactus_API.BLL.Models;
+using Cactus_API.DAL.DbContexts;
+using Cactus_API.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KickScooter_API.BLL.Services
+namespace Cactus_API.BLL.Services
 {
     public class HelpCallService : IHelpCallService
     {

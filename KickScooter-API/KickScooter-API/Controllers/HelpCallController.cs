@@ -1,8 +1,8 @@
-﻿using KickScooter_API.BLL.Models;
-using KickScooter_API.BLL.Services;
+﻿using Cactus_API.BLL.Models;
+using Cactus_API.BLL.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KickScooter_API.Controllers
+namespace Cactus_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

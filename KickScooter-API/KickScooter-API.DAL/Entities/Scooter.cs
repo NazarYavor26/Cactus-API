@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cactus_API.DAL.Entities
 {
-    public class HelpCall
+    public class Scooter
     {
         public int Id { get; set; }
 
@@ -16,7 +16,7 @@ namespace Cactus_API.DAL.Entities
         public string Name { get; set; }
 
         [Required]
-        [MaxLength(15)]
-        public string PhoneNumber { get; set; }
+        [MaxLength(100)]
+        public string Description { get; set; }
     }
 }

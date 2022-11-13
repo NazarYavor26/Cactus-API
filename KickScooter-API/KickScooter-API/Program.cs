@@ -1,5 +1,5 @@
-using KickScooter_API.BLL;
-using KickScooter_API.BLL.Services;
+using Cactus_API.BLL;
+using Cactus_API.BLL.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

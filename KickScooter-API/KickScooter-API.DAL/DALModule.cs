@@ -1,9 +1,9 @@
-﻿using KickScooter_API.DAL.DbContexts;
+﻿using Cactus_API.DAL.DbContexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace KickScooter_API.DAL
+namespace Cactus_API.DAL
 {
     public class DALModule
     {
