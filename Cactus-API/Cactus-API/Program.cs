@@ -18,6 +18,7 @@ builder.Services.AddCors(options => options.AddPolicy(KickScooterPolicy, builder
 }));
 
 builder.Services.AddTransient<IHelpCallService, HelpCallService>();
+builder.Services.AddTransient<IScooterProductService, ScooterProductService>();
 
 BLLModule.Load(builder.Services, builder.Configuration);
 

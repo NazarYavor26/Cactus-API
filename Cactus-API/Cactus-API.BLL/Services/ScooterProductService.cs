@@ -15,6 +15,15 @@ namespace Cactus_API.BLL.Services
 
         public List<ScooterProduct> GetAllScoters()
         {
+         /*   _db.ScooterProducts.Add(new ScooterProduct() 
+                {   
+                    Title = "title1",
+                    Description = "some desc 1",
+                    Price = 1,
+                    IsAvailable = true 
+                });
+
+            _db.SaveChanges();*/
             /*var list = new List<ScooterProductModel>() 
             var ScooterProducts = _db.ScooterProducts.ToList();*/
             /*   ScooterProductModel scooterProductModel = */
