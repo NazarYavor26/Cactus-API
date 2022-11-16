@@ -10,6 +10,6 @@ namespace Cactus_API.BLL.Services
 {
     public interface IScooterProductService
     {
-        List<ScooterProduct> GetAllScoters();
+        List<ScooterProductModel> GetAllScoters();
     }
 }

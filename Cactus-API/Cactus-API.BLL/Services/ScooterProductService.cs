@@ -13,21 +13,23 @@ namespace Cactus_API.BLL.Services
             _db = db;
         }
 
-        public List<ScooterProduct> GetAllScoters()
+        public List<ScooterProductModel> GetAllScoters()
         {
-         /*   _db.ScooterProducts.Add(new ScooterProduct() 
-                {   
-                    Title = "title1",
-                    Description = "some desc 1",
-                    Price = 1,
-                    IsAvailable = true 
+            List<ScooterProductModel> ScooterProductModel = new();
+            foreach (var scooterProduct in _db.ScooterProducts.ToList())
+            {
+                ScooterProductModel.Add(new ScooterProductModel()
+                {
+                    Id = scooterProduct.Id,
+                    Title = scooterProduct.Title,
+                    Description = scooterProduct.Description,
+                    Price = scooterProduct.Price,
+                    IsAvailable = scooterProduct.IsAvailable,
+                    Image = @"C:\Users\nazar\Desktop\Cactus\Cactus-API\Cactus-API\Cactus-API\Cactus-API.DAL\Images\ScooterProduct" + scooterProduct.Id + ".*"
                 });
+            }
 
-            _db.SaveChanges();*/
-            /*var list = new List<ScooterProductModel>() 
-            var ScooterProducts = _db.ScooterProducts.ToList();*/
-            /*   ScooterProductModel scooterProductModel = */
-            return _db.ScooterProducts.ToList();
+            return ScooterProductModel;
         }
     }
 }
