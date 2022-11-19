@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Cactus_API.DAL.Enums
 {
-    public enum SparePartDeviceModel
+    public enum SparePartCategory
     {
         Components = 1,
         Tires,
         InnerTubes,
         OtherSmallParts,
         Fenders,
-        Covers
+        Covers,
+        Wheels
     }
 }

@@ -14,10 +14,11 @@ namespace Cactus_API.DAL.Entities
         [Required]
         public double Price { get; set; }
 
-        public SparePartDeviceModel? DeviceModel { get; set; }
+        
+        public string? DeviceModel { get; set; }
 
         [Required]
-        public string Category { get; set; }
+        public SparePartCategory Category { get; set; }
 
         [Required]
         public bool IsAvailable { get; set; }
