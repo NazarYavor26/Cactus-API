@@ -1,25 +1,24 @@
 ﻿using Cactus_API.DAL.Enums;
-using System.ComponentModel.DataAnnotations;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Cactus_API.DAL.Entities
+namespace Cactus_API.BLL.Models
 {
-    public class SparePartProduct
+    public class SparePartProductModel
     {
         public int Id { get; set; }
 
-        [Required]
-        [MaxLength(100)]
         public string Title { get; set; }
 
-        [Required]
         public double Price { get; set; }
 
         public SparePartDeviceModel? DeviceModel { get; set; }
 
-        [Required]
         public string Category { get; set; }
 
-        [Required]
-        public bool IsAvailable { get; set; }
+        public string Image { get; set; }
     }
 }
