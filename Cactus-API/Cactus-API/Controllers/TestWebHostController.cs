@@ -7,7 +7,7 @@ namespace Cactus_API.Controllers
     [ApiController]
     public class TestWebHostController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("test-host")]
         public ActionResult<string> GetTestData()
         {
             return Ok("Some string just for see work host or not");

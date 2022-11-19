@@ -25,7 +25,7 @@ namespace Cactus_API.BLL.Services
                     Description = scooterProduct.Description,
                     Price = scooterProduct.Price,
                     IsAvailable = scooterProduct.IsAvailable,
-                    Image = @"C:\Users\nazar\Desktop\Cactus\Cactus-API\Cactus-API\Cactus-API\Cactus-API.DAL\Images\ScooterProduct" + scooterProduct.Id + ".*"
+                    Image = @"https://firebasestorage.googleapis.com/v0/b/cactus-bf101.appspot.com/o/ScooterProducts%2FScooterProduct" + scooterProduct.Id + ".webp?alt=media&token=d0456b09-a054-4667-8192-774646d3dfe8"
                 });
             }
 
