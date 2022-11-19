@@ -17,7 +17,7 @@ namespace Cactus_API.BLL.Models
 
         public string? DeviceModel { get; set; }
 
-        public SparePartCategory Category { get; set; }
+        public string Category { get; set; }
 
         public string Image { get; set; }
     }
