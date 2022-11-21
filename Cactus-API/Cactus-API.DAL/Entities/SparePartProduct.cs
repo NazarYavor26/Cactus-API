@@ -14,7 +14,7 @@ namespace Cactus_API.DAL.Entities
         [Required]
         public double Price { get; set; }
 
-        
+
         public string? DeviceModel { get; set; }
 
         [Required]

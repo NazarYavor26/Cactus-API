@@ -1,6 +1,5 @@
 ﻿using Cactus_API.BLL.Models;
 using Cactus_API.DAL.DbContexts;
-using Cactus_API.DAL.Entities;
 
 namespace Cactus_API.BLL.Services
 {
