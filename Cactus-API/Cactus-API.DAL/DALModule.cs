@@ -10,7 +10,7 @@ namespace Cactus_API.DAL
         public static void Load(IServiceCollection service, IConfiguration configuration)
         {
             service.AddDbContext<AppDbContext>(option =>
-            option.UseSqlServer(configuration.GetConnectionString("DBConnection"))
+            option.UseSqlServer(configuration.GetConnectionString("AZURE_SQL_CONNECTION"))
             );
         }
     }
