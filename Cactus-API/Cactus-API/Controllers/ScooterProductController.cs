@@ -1,7 +1,5 @@
 ﻿using Cactus_API.BLL.Models;
 using Cactus_API.BLL.Services;
-using Cactus_API.DAL.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cactus_API.Controllers
