@@ -1,7 +1,24 @@
 using Cactus_API.BLL;
 using Cactus_API.BLL.Services;
+using Cactus_API.DAL.DbContexts;
+using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.ConfigureAppConfiguration((context, config) =>
+{
+    config
+        .SetBasePath(Directory.GetCurrentDirectory())
+        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        .AddJsonFile($"appsettings.{context.HostingEnvironment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+        .AddEnvironmentVariables();
+})
+.UseSerilog((hostContext, services, configuration) =>
+{
+    configuration
+        .ReadFrom.Configuration(hostContext.Configuration);
+});
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -25,11 +42,17 @@ BLLModule.Load(builder.Services, builder.Configuration);
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+
+
+using var scope = app.Services.CreateScope();
+using var context = scope.ServiceProvider.GetService<AppDbContext>();
+
+context.Database.Migrate();
+
+
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseCors(KickScooterPolicy);
 

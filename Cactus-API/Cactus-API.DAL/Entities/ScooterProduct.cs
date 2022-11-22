@@ -11,7 +11,6 @@ namespace Cactus_API.DAL.Entities
         public string Title { get; set; }
 
         [Required]
-        [MaxLength(100)]
         public string Description { get; set; }
 
         [Required]
