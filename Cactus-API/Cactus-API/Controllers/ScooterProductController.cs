@@ -16,7 +16,7 @@ namespace Cactus_API.Controllers
         }
 
 
-        [HttpGet("scooters")]
+        [HttpGet]
         public ActionResult<List<ScooterProductModel>> GetAllScooters()
         {
             return Ok(_scooterProductService.GetAllScoters());

@@ -14,7 +14,7 @@ namespace Cactus_API.Controllers
             _sparePartProductService = sparePartProductService;
         }
 
-        [HttpGet("spare-parts")]
+        [HttpGet]
         public ActionResult<List<SparePartProductService>> GetAllSparePart()
         {
             return Ok(_sparePartProductService.GetAllSpareParts());
